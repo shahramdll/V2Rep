@@ -6,7 +6,11 @@ for windows: [https://github.com/MortezaBashsiz/CFScanner/releases/](https://git
 for android: https://github.com/xianshenglu/cloudflare-ip-tester-app
 
 **CF Worker tutorial:**  
-https://getafreenode.com/blog/index.php/tutorial/32.html
+[https://getafreenode.com/blog/index.php/tutorial/32.html](https://getafreenode.com/blog/index.php/tutorial/32.html)
+
+**GFW-knocker:**
+
+https://github.com/GFW-knocker/gfw_resist_tls_proxy
 
 **Get A Free Node for IR:**  
 https://getafreenode.com/foriran/
