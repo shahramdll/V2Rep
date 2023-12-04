@@ -75,9 +75,6 @@
       "domain:meta.com": [
         "163.70.128.13"
       ],
-      "domain:whatsapp-cdn-shv-01-lhr8.fbcdn.net": [
-        "163.70.128.60"
-      ],
       "domain:whatsapp.com": [
         "163.70.128.60"
       ],
@@ -87,29 +84,23 @@
       "domain:api.whatsapp.com": [
         "163.70.128.60"
       ],
-      "domain:alpha.whatsapp.com": [
-        "163.70.128.60"
-      ],
-      "domain:beta.whatsapp.com": [
-        "163.70.128.60"
-      ],
       "domain:account.whatsapp.com": [
         "163.70.128.60"
       ],
       "domain:autodiscover.whatsapp.com": [
-        "163.70.128.60"
+        "40.100.146.184"
       ],
       "domain:whatsapp.net": [
         "163.70.128.60"
       ],
-      "domain:cdn.whatsapp.net": [
+      "domain:static.whatsapp.net": [
+        "163.70.128.60"
+      ],
+      "domain:scontent.whatsapp.net": [
         "163.70.128.60"
       ],
       "domain:chat.cdn.whatsapp.net": [
-        "163.70.128.60"
-      ],
-      "domain:snr.whatsapp.net": [
-        "163.70.128.60"
+        "163.70.128.61"
       ],
       "domain:dit.whatsapp.net": [
         "163.70.128.60"
@@ -118,13 +109,13 @@
         "163.70.128.60"
       ],
       "domain:c.whatsapp.net": [
-        "15.197.206.217"
+        "3.33.221.48"
       ],
       "domain:g-fallback.whatsapp.net": [
-        "163.70.128.60"
+        "163.70.128.61"
       ],
       "domain:g.whatsapp.net": [
-        "163.70.128.60"
+        "163.70.128.61"
       ],
       "domain:graph.whatsapp.net": [
         "163.70.128.60"
