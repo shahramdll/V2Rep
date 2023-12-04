@@ -534,6 +534,12 @@
       },
       {
         "type": "field",
+        "port": "5222",
+        "outboundTag": "directdp",
+        "enabled": true
+      },
+      {
+        "type": "field",
         "domain": [
           "awsglobalaccelerator.com"
         ],
@@ -544,7 +550,8 @@
         "type": "field",
         "ip": [
           "15.197.206.217",
-          "163.70.147.60"
+          "163.70.147.60",
+          "216.239.35.0"
         ],
         "outboundTag": "directdm",
         "enabled": true
