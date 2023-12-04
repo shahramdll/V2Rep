@@ -257,7 +257,15 @@
       }
     },
     {
-      "tag": "directdd",
+      "tag": "directdp",
+      "protocol": "freedom",
+      "settings": {
+        "domainStrategy": "UseIP",
+        "userLevel": 0
+      }
+    },
+    {
+      "tag": "directdm",
       "protocol": "freedom",
       "settings": {
         "domainStrategy": "UseIP",
@@ -521,7 +529,24 @@
       {
         "type": "field",
         "port": "80",
-        "outboundTag": "directdd",
+        "outboundTag": "directdp",
+        "enabled": true
+      },
+      {
+        "type": "field",
+        "domain": [
+          "awsglobalaccelerator.com"
+        ],
+        "outboundTag": "directdm",
+        "enabled": true
+      },
+      {
+        "type": "field",
+        "ip": [
+          "15.197.206.217",
+          "163.70.147.60"
+        ],
+        "outboundTag": "directdm",
         "enabled": true
       },
       {
