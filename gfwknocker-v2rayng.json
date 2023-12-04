@@ -257,6 +257,14 @@
       }
     },
     {
+      "tag": "directdd",
+      "protocol": "freedom",
+      "settings": {
+        "domainStrategy": "UseIP",
+        "userLevel": 0
+      }
+    },
+    {
       "protocol": "freedom",
       "tag": "fragment-out",
       "domainStrategy": "UseIP",
@@ -485,7 +493,6 @@
       },
       {
         "type": "field",
-        "port": "81-65535",
         "outboundTag": "fragment-out",
         "domain": [
           "googlevideo.",
@@ -509,6 +516,12 @@
           "cdn.cms-twdigitalassets.com",
           "doh.umbrella.com"
         ],
+        "enabled": true
+      },
+      {
+        "type": "field",
+        "port": "80",
+        "outboundTag": "directdd",
         "enabled": true
       },
       {
