@@ -45,6 +45,9 @@
       "domain:facebook.com": [
         "163.70.128.35"
       ],
+      "domain:graph.facebook.com": [
+        "163.70.128.35"
+      ],
       "domain:messenger.com": [
         "163.70.128.35"
       ],
@@ -72,10 +75,16 @@
       "domain:whatsapp.com": [
         "163.70.128.60"
       ],
+      "domain:web.whatsapp.com": [
+        "163.70.128.60"
+      ],
       "domain:whatsapp.net": [
         "163.70.128.60"
       ],
       "domain:cdn.whatsapp.net": [
+        "163.70.128.60"
+      ],
+      "domain:chat.cdn.whatsapp.net": [
         "163.70.128.60"
       ],
       "domain:snr.whatsapp.net": [
@@ -85,9 +94,12 @@
         "163.70.128.60"
       ],
       "domain:c.whatsapp.net": [
-        "163.70.128.61"
+        "15.197.206.217"
       ],
       "domain:g.whatsapp.net": [
+        "163.70.128.61"
+      ],
+      "domain:graph.whatsapp.net": [
         "163.70.128.61"
       ],
       "domain:e1.whatsapp.net": [
