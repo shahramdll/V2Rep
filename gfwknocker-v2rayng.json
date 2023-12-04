@@ -480,41 +480,6 @@
       },
       {
         "type": "field",
-        "port": "80",
-        "outboundTag": "directdp",
-        "enabled": true
-      },
-      {
-        "type": "field",
-        "port": "5222",
-        "ip": [
-          "15.197.206.217",
-          "31.13.88.61"
-        ],
-        "outboundTag": "proxy",
-        "enabled": true
-      },
-      {
-        "type": "field",
-        "domain": [
-          "awsglobalaccelerator.com"
-        ],
-        "outboundTag": "directdm",
-        "enabled": true
-      },
-      {
-        "type": "field",
-        "ip": [
-          "15.197.206.217",
-          "163.70.147.60",
-          "216.239.35.0",
-          "216.239.35.12"
-        ],
-        "outboundTag": "directdm",
-        "enabled": true
-      },
-      {
-        "type": "field",
         "outboundTag": "fragment-out",
         "domain": [
           "googlevideo.",
@@ -538,6 +503,12 @@
           "cdn.cms-twdigitalassets.com",
           "doh.umbrella.com"
         ],
+        "enabled": true
+      },
+      {
+        "type": "field",
+        "port": "80",
+        "outboundTag": "directdp",
         "enabled": true
       },
       {
