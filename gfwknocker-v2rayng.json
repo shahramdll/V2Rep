@@ -249,6 +249,14 @@
   ],
   "outbounds": [
     {
+      "tag": "direct",
+      "protocol": "freedom",
+      "settings": {
+        "domainStrategy": "UseIP",
+        "userLevel": 0
+      }
+    },
+    {
       "protocol": "freedom",
       "tag": "fragment-out",
       "domainStrategy": "UseIP",
