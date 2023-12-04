@@ -491,12 +491,6 @@
       },
       {
         "type": "field",
-        "port": "80",
-        "outboundTag": "directdp",
-        "enabled": true
-      },
-      {
-        "type": "field",
         "outboundTag": "proxytr",
         "domain": [
           "cloudfront.",
@@ -555,6 +549,7 @@
           "check-host.net",
           "whatsapp-chatd-edge-shv-01-lga3.facebook.com",
           "whatsapp-chatd-edge-shv-02-mia3.facebook.com",
+          "whatsapp-cdn-shv-01-cdg4.fbcdn.net",
           "twitter.com",
           "digimovie",
           "voanews.",
@@ -684,6 +679,7 @@
         "outboundTag": "proxy",
         "ip": [
           "157.240.14.53",
+          "185.60.219.60",
           "31.13.71.50",
           "149.154.167.41",
           "149.154.167.91",
