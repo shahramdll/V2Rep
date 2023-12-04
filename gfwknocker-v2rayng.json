@@ -668,7 +668,10 @@
           "limecube.",
           "singular.",
           "whatsapp-chatd-",
-          "whatsapp-cdn-",
+          "whatsapp-cdn-shv-01-",
+          "whatsapp-cdn-shv-02-",
+          "whatsapp-chatd-msgr-edge-shv-02-",
+          "whatsapp-chatd-msgr-edge-shv-02-",
           "examplesite12345.com"
         ],
         "enabled": true
