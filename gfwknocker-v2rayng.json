@@ -599,6 +599,7 @@
           "whatismyipaddress.com",
           "check-host.net",
           "whatsapp-chatd-edge-shv-01-lga3.facebook.com",
+          "whatsapp-chatd-edge-shv-02-mia3.facebook.com",
           "twitter.com",
           "digimovie",
           "voanews.",
@@ -727,6 +728,8 @@
         "type": "field",
         "outboundTag": "proxy",
         "ip": [
+          "157.240.14.53",
+          "31.13.71.50",
           "149.154.167.41",
           "149.154.167.91",
           "149.154.167.92",
