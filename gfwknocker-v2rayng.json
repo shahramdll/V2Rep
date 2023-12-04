@@ -535,7 +535,10 @@
       {
         "type": "field",
         "port": "5222",
-        "outboundTag": "directdp",
+        "domain": [
+          "whatsapp.net"
+        ],
+        "outboundTag": "proxy",
         "enabled": true
       },
       {
