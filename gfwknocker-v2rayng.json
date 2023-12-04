@@ -156,22 +156,6 @@
   ],
   "outbounds": [
     {
-      "tag": "direct",
-      "protocol": "freedom",
-      "settings": {
-        "domainStrategy": "UseIP",
-        "userLevel": 0
-      }
-    },
-    {
-      "tag": "directadd",
-      "protocol": "freedom",
-      "settings": {
-        "domainStrategy": "UseIP",
-        "userLevel": 0
-      }
-    },
-    {
       "protocol": "freedom",
       "tag": "fragment-out",
       "domainStrategy": "UseIP",
@@ -421,35 +405,6 @@
           "syndication.twitter.com",
           "cdn.cms-twdigitalassets.com",
           "doh.umbrella.com"
-        ],
-        "enabled": true
-      },
-      {
-        "type": "field",
-        "outboundTag": "directadd",
-        "domain": [
-          ".githubusercontent.com",
-          "meet.google.com",
-          "meet.turns.goog",
-          "mtalk.google.com",
-          "ext:iran.dat:ir",
-          "ext:iran.dat:other",
-          "zabanshenas.com",
-          "zabanshenas.app",
-          ".ir",
-          "translate.googleapis.",
-          "translate.google.",
-          "fonts.googleapis.",
-          "fonts.google.",
-          "examplesite123456.com"
-        ],
-        "enabled": true
-      },
-      {
-        "type": "field",
-        "outboundTag": "directadd",
-        "ip": [
-          "216.58.205.46"
         ],
         "enabled": true
       },
