@@ -474,65 +474,8 @@
     "rules": [
       {
         "type": "field",
-        "inboundTag": [
-          "api"
-        ],
-        "outboundTag": "api",
-        "enabled": true
-      },
-      {
-        "type": "field",
         "port": "8443",
         "outboundTag": "dns-out",
-        "domain": [
-          "googlevideo.",
-          "ytimg.",
-          "instagram.",
-          "facebook.",
-          "messenger.",
-          "fbcdn.",
-          "meta.",
-          "whatsapp.",
-          "wa.me",
-          "x.com",
-          "api.twitter.com",
-          "help.twitter.com",
-          "platform.twitter.com",
-          "abs.twimg.com",
-          "abs-0.twimg.com",
-          "pbs.twimg.com",
-          "video.twimg.com",
-          "syndication.twitter.com",
-          "cdn.cms-twdigitalassets.com",
-          "doh.umbrella.com"
-        ],
-        "enabled": true
-      },
-      {
-        "type": "field",
-        "outboundTag": "fragment-out",
-        "domain": [
-          "googlevideo.",
-          "ytimg.",
-          "instagram.",
-          "facebook.",
-          "messenger.",
-          "fbcdn.",
-          "meta.",
-          "whatsapp.",
-          "wa.me",
-          "x.com",
-          "api.twitter.com",
-          "help.twitter.com",
-          "platform.twitter.com",
-          "abs.twimg.com",
-          "abs-0.twimg.com",
-          "pbs.twimg.com",
-          "video.twimg.com",
-          "syndication.twitter.com",
-          "cdn.cms-twdigitalassets.com",
-          "doh.umbrella.com"
-        ],
         "enabled": true
       },
       {
@@ -568,6 +511,33 @@
           "216.239.35.12"
         ],
         "outboundTag": "directdm",
+        "enabled": true
+      },
+      {
+        "type": "field",
+        "outboundTag": "fragment-out",
+        "domain": [
+          "googlevideo.",
+          "ytimg.",
+          "instagram.",
+          "facebook.",
+          "messenger.",
+          "fbcdn.",
+          "meta.",
+          "whatsapp.",
+          "wa.me",
+          "x.com",
+          "api.twitter.com",
+          "help.twitter.com",
+          "platform.twitter.com",
+          "abs.twimg.com",
+          "abs-0.twimg.com",
+          "pbs.twimg.com",
+          "video.twimg.com",
+          "syndication.twitter.com",
+          "cdn.cms-twdigitalassets.com",
+          "doh.umbrella.com"
+        ],
         "enabled": true
       },
       {
