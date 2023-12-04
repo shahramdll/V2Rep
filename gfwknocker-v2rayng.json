@@ -36,6 +36,9 @@
       "domain:instagram.com": [
         "163.70.128.174"
       ],
+      "domain:i.instagram.com": [
+        "163.70.128.174"
+      ],
       "domain:static.cdninstagram.com": [
         "163.70.132.63"
       ],
@@ -78,6 +81,21 @@
       "domain:web.whatsapp.com": [
         "163.70.128.60"
       ],
+      "domain:api.whatsapp.com": [
+        "163.70.128.60"
+      ],
+      "domain:alpha.whatsapp.com": [
+        "163.70.128.60"
+      ],
+      "domain:beta.whatsapp.com": [
+        "163.70.128.60"
+      ],
+      "domain:account.whatsapp.com": [
+        "163.70.128.60"
+      ],
+      "domain:autodiscover.whatsapp.com": [
+        "163.70.128.60"
+      ],
       "domain:whatsapp.net": [
         "163.70.128.60"
       ],
@@ -98,6 +116,9 @@
       ],
       "domain:c.whatsapp.net": [
         "15.197.206.217"
+      ],
+      "domain:g-fallback.whatsapp.net": [
+        "163.70.128.61"
       ],
       "domain:g.whatsapp.net": [
         "163.70.128.61"
