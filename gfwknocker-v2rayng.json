@@ -535,8 +535,8 @@
       {
         "type": "field",
         "port": "5222",
-        "domain": [
-          "whatsapp.net"
+        "ip": [
+          "15.197.206.217"
         ],
         "outboundTag": "proxy",
         "enabled": true
