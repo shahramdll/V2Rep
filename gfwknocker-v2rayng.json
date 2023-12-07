@@ -427,7 +427,7 @@
     },
     {
       "tag": "directd",
-      "protocol": "freedom",
+      "protocol": "freedom"
 		},
     {
       "tag": "block",
