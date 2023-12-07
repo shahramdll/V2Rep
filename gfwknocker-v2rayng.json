@@ -426,9 +426,9 @@
       }
     },
     {
-      "tag": "directd",
-      "protocol": "freedom"
-		},
+      "tag" : "directd",
+      "protocol" : "freedom"
+    },
     {
       "tag": "block",
       "protocol": "blackhole",
