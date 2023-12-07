@@ -426,6 +426,9 @@
       }
     },
     {
+      "tag": "directd",
+      "protocol": "freedom",
+    {
       "tag": "block",
       "protocol": "blackhole",
       "settings": {
@@ -675,6 +678,31 @@
           "149.154.167.0/24",
           "149.154.172.0/24",
           "149.154.175.0/24"
+        ],
+        "enabled": true
+      },
+      {
+        "type": "field",
+        "outboundTag": "directd",
+        "domain": [
+          ".ir",
+          "ext:iran.dat:ir",
+          "ext:iran.dat:other",
+          ".githubusercontent.com",
+          "meet.google.com",
+          "meet.turns.goog",
+          "mtalk.google.com",
+          "zabanshenas.com",
+          "zabanshenas.app",
+		      "drive.usercontent.google.com"
+        ],
+        "enabled": true
+      },
+      {
+        "type": "field",
+        "outboundTag": "directd",
+        "ip": [
+          "geoip:ir"
         ],
         "enabled": true
       },
