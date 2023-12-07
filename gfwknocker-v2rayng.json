@@ -439,20 +439,12 @@
     "domainStrategy": "IPIfNonMatch",
     "rules": [
       {
-        "inboundTag": [
-          "socks",
-          "http"
-        ],
         "type": "field",
-        "port": "8443",
+        "port": "53,8443",
         "outboundTag": "dns-out",
         "enabled": true
       },
       {
-        "inboundTag": [
-          "socks",
-          "http"
-        ],
         "type": "field",
         "outboundTag": "fragment-out",
         "domain": [
@@ -480,10 +472,6 @@
         "enabled": true
       },
       {
-        "inboundTag": [
-          "socks",
-          "http"
-        ],
         "type": "field",
         "outboundTag": "proxytr",
         "domain": [
@@ -528,10 +516,6 @@
         "enabled": true
       },
       {
-        "inboundTag": [
-          "socks",
-          "http"
-        ],
         "type": "field",
         "outboundTag": "proxytr",
         "ip": [
@@ -540,10 +524,6 @@
         "enabled": true
       },
       {
-        "inboundTag": [
-          "socks",
-          "http"
-        ],
         "type": "field",
         "outboundTag": "proxy",
         "domain": [
@@ -679,10 +659,6 @@
         "enabled": true
       },
       {
-        "inboundTag": [
-          "socks",
-          "http"
-        ],
         "type": "field",
         "outboundTag": "proxy",
         "ip": [
@@ -733,10 +709,6 @@
         "enabled": true
       },
       {
-        "inboundTag": [
-          "socks",
-          "http"
-        ],
         "type": "field",
         "outboundTag": "block",
         "domain": [
