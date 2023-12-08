@@ -778,19 +778,15 @@
 			{
         "type": "field",
         "outboundTag": "fragment-out",
-        "ip": [
-          "146.112.41.5",
-					"8.8.8.8",
-					"8.8.4.4",
-					"1.1.1.1"
-        ],
+        "port": "53",
         "enabled": true
       },
       {
         "type": "field",
         "outboundTag": "block",
-        "domain": [
-          "geosite:category-ads"
+        "port": [
+          "geosite:category-ads",
+					"ext:iran.dat:ads"
         ],
         "enabled": true
       }
