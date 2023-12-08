@@ -282,6 +282,14 @@
   ],
   "outbounds": [
     {
+      "tag": "direct",
+      "protocol": "freedom"
+    },
+		{
+      "tag": "directd",
+      "protocol": "freedom"
+    },
+		{
       "protocol": "freedom",
       "tag": "fragment-out",
       "domainStrategy": "UseIP",
@@ -448,10 +456,6 @@
         "enabled": false,
         "concurrency": -1
       }
-    },
-    {
-      "tag": "directd",
-      "protocol": "freedom"
     },
     {
       "tag": "block",
@@ -671,10 +675,13 @@
           "149.154.167.0/24",
           "149.154.172.0/24",
           "149.154.175.0/24",
-					"3.33.252.61",
+					"3.33.221.48",
+          "3.33.252.61",
           "15.197.206.217",
           "15.197.210.208",
-          "3.33.221.48"
+          "31.13.65.50",
+          "157.240.202.60",
+          "163.70.128.35"
         ],
         "enabled": true
       },
@@ -699,7 +706,9 @@
         "type": "field",
         "outboundTag": "directd",
         "ip": [
-          "geoip:ir"
+          "geoip:ir",
+					"216.58.205.46",
+          "216.239.35.0/24"
         ],
         "enabled": true
       },
