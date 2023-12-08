@@ -194,6 +194,10 @@
       "domain:whatsapp-cdn-shv-01-atl3.fbcdn.net": "163.70.128.60",
       "domain:whatsapp-cdn-shv-01-bog1.fbcdn.net": "163.70.128.60",
       "domain:whatsapp-cdn-shv-01-bom1.fbcdn.net": "163.70.128.60",
+			"domain:whatsapp-cdn-shv-01-cdg4.fbcdn.net": "163.70.128.60",
+      "domain:whatsapp-cdn-shv-01-cdg4-1.fbcdn.net": "163.70.128.60",
+      "domain:whatsapp-cdn-shv-01-cdg4-2.fbcdn.net": "163.70.128.60",
+      "domain:whatsapp-cdn-shv-01-cdg4-3.fbcdn.net": "163.70.128.60",
       "domain:whatsapp-cdn-shv-01-dfw5.fbcdn.net": "163.70.128.60",
       "domain:whatsapp-cdn-shv-01-gru2.fbcdn.net": "163.70.128.60",
       "domain:whatsapp-cdn-shv-01-iad3.fbcdn.net": "163.70.128.60",
@@ -675,14 +679,14 @@
           "149.154.167.0/24",
           "149.154.172.0/24",
           "149.154.175.0/24",
-		"3.33.221.48",
+					"3.33.221.48",
           "3.33.252.61",
           "15.197.206.217",
           "15.197.210.208",
           "31.13.65.50",
           "157.240.202.60",
-          "163.70.128.35",
-		"185.60.219.60"
+					"163.70.128.35",
+					"185.60.219.60"
         ],
         "enabled": true
       },
