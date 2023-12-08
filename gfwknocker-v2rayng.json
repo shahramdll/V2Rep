@@ -296,10 +296,6 @@
   ],
   "outbounds": [
     {
-      "tag": "direct",
-      "protocol": "freedom"
-    },
-    {
       "tag": "directd",
       "protocol": "freedom"
     },
@@ -425,6 +421,10 @@
         "enabled": false,
         "concurrency": -1
       }
+    },
+    {
+      "tag": "direct",
+      "protocol": "freedom"
     },
     {
       "tag": "proxytr",
@@ -743,16 +743,6 @@
       },
       {
         "type": "field",
-        "outboundTag": "directd",
-        "ip": [
-          "geoip:ir",
-          "216.58.205.46",
-          "216.239.35.0/24"
-        ],
-        "enabled": true
-      },
-      {
-        "type": "field",
         "outboundTag": "fragment-out",
         "domain": [
           "googlevideo.",
@@ -780,8 +770,18 @@
       },
       {
         "type": "field",
-        "outboundTag": "proxy",
-        "port": "53",
+        "outboundTag": "directd",
+        "ip": [
+          "geoip:ir",
+          "216.58.205.46",
+          "216.239.35.0/24"
+        ],
+        "enabled": true
+      },
+      {
+        "type": "field",
+        "outboundTag": "directd",
+        "port": "5222",
         "enabled": true
       },
       {
