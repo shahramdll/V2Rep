@@ -780,7 +780,7 @@
       },
       {
         "type": "field",
-        "outboundTag": "fragment-out",
+        "outboundTag": "proxy",
         "port": "53",
         "enabled": true
       },
