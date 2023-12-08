@@ -18,14 +18,6 @@ num_fragment = 150  # total number of chunks that ClientHello devided into (chun
 fragment_sleep = 0.001  # sleep between each fragment to make GFW-cache full so it forget previous chunks. LOL.
 
 log_every_N_sec = 10
-#DNS_url = 'https://cloudflare-dns.com/dns-query?dns='      # not working in iran , ip blocked
-#DNS_url = 'https://dns.google/dns-query?dns='              # not working in iran , ip blocked
-#DNS_url = 'https://doh.opendns.com/dns-query?dns='           # not working in iran , ip blocked
-#DNS_url = 'https://secure.avastdns.com/dns-query?dns='      # not working in iran , ip blocked
-#DNS_url = 'https://doh.libredns.gr/dns-query?dns='          # not working in iran , ip blocked
-#DNS_url = 'https://dns.electrotm.org/dns-query?dns='
-#DNS_url = 'https://doh.dnscrypt.uk/dns-query?dns='
-#DNS_url = 'https://v.dnscrypt.uk/dns-query?dns='
 DNS_url = 'https://doh.umbrella.com/dns-query?dns='
 
 
@@ -33,20 +25,12 @@ DNS_url = 'https://doh.umbrella.com/dns-query?dns='
 offline_DNS = {
 
 ################## DNS over HTTPS IP Address (leave it intact , it must Exist) ######################
-'cloudflare-dns.com':'1.1.1.1',    # not working in iran , ip blocked
-'dns.google':'8.8.8.8',    # not working in iran , ip blocked
-'doh.opendns.com':'208.67.222.222',    # not working in iran , ip blocked
-'secure.avastdns.com':'185.185.133.66',  # not working in iran , ip blocked
-'doh.libredns.gr':'116.202.176.26',        # not working in iran , ip blocked    
-'dns.electrotm.org':'78.157.42.100',
-'doh.dnscrypt.uk':'165.227.233.200',
-'v.dnscrypt.uk':'136.244.65.20',
 'doh.umbrella.com':'146.112.41.5',
 ##########################################################################
 
-
 'youtube.com':'google.com',
-'doh.umbrella.com':'146.112.41.5',
+'www.youtube.com':'google.com',
+'www.instagram.com': '163.70.128.63',
 'instagram.com':'163.70.128.63',
 'graph.instagram.com':'163.70.128.63',
 'graphql.instagram.com':'163.70.128.63',
@@ -125,7 +109,9 @@ offline_DNS = {
 'edge-mqtt.facebook.com':'163.70.128.4',
 'edge-star-mini-shv-03-cdg4.facebook.com':'163.70.128.35',
 'edge-dgw-shv-03-cdg4.facebook.com':'163.70.128.63',
+'www.facebook.com':'163.70.128.35',
 'facebook.com':'163.70.128.35',
+'web-chat-e2ee.facebook.com': '163.70.128.128',
 'graph.facebook.com':'163.70.128.35',
 'messenger.com':'163.70.128.35',
 'static.xx.fbcdn.net':'163.70.128.35',
@@ -269,7 +255,7 @@ offline_DNS = {
 'platform.twitter.com':'93.184.220.66',
 'abs.twimg.com':'151.101.244.159',
 'abs-0.twimg.com':'104.244.43.131',
-'pbs.twimg.com':'93.184.220.70'
+'pbs.twimg.com':'93.184.220.70',
 'video.twimg.com':'192.229.220.133',
 'appspot.com':'142.250.179.142',
 
