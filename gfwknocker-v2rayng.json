@@ -296,10 +296,6 @@
   ],
   "outbounds": [
     {
-      "tag": "directd",
-      "protocol": "freedom"
-    },
-    {
       "protocol": "freedom",
       "tag": "fragment-out",
       "domainStrategy": "UseIP",
@@ -378,6 +374,10 @@
       }
     },
     {
+      "tag": "directd",
+      "protocol": "freedom"
+    },
+    {
       "tag": "proxy",
       "protocol": "vless",
       "settings": {
@@ -421,10 +421,6 @@
         "enabled": false,
         "concurrency": -1
       }
-    },
-    {
-      "tag": "direct",
-      "protocol": "freedom"
     },
     {
       "tag": "proxytr",
