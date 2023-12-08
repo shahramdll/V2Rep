@@ -784,7 +784,7 @@
       {
         "type": "field",
         "outboundTag": "block",
-        "port": [
+        "domain": [
           "geosite:category-ads",
 					"ext:iran.dat:ads"
         ],
