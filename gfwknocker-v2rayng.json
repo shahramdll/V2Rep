@@ -488,6 +488,36 @@
       },
       {
         "type": "field",
+        "outboundTag": "fragment-out",
+        "domain": [
+          "dns.google",
+          "one.one.one.one",
+          "doh.umbrella.com",
+          "cloudflare-dns.com",
+          "googlevideo.",
+          "ytimg.",
+          "instagram.",
+          "facebook.",
+          "messenger.",
+          "fbcdn.",
+          "meta.",
+          "whatsapp.",
+          "wa.me",
+          "x.com",
+          "api.twitter.com",
+          "help.twitter.com",
+          "platform.twitter.com",
+          "abs.twimg.com",
+          "abs-0.twimg.com",
+          "pbs.twimg.com",
+          "video.twimg.com",
+          "syndication.twitter.com",
+          "cdn.cms-twdigitalassets.com"
+        ],
+        "enabled": true
+      },
+      {
+        "type": "field",
         "outboundTag": "proxytr",
         "domain": [
           "cloudfront.",
@@ -734,33 +764,6 @@
           "zabanshenas.com",
           "zabanshenas.app",
           "drive.usercontent.google.com"
-        ],
-        "enabled": true
-      },
-      {
-        "type": "field",
-        "outboundTag": "fragment-out",
-        "domain": [
-          "googlevideo.",
-          "ytimg.",
-          "instagram.",
-          "facebook.",
-          "messenger.",
-          "fbcdn.",
-          "meta.",
-          "whatsapp.",
-          "wa.me",
-          "x.com",
-          "api.twitter.com",
-          "help.twitter.com",
-          "platform.twitter.com",
-          "abs.twimg.com",
-          "abs-0.twimg.com",
-          "pbs.twimg.com",
-          "video.twimg.com",
-          "syndication.twitter.com",
-          "cdn.cms-twdigitalassets.com",
-          "umbrella.com"
         ],
         "enabled": true
       },
