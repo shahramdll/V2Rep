@@ -1,4 +1,18 @@
 {
+  "policy": {
+    "levels": {
+      "8": {
+        "connIdle": 300,
+        "downlinkOnly": 1,
+        "handshake": 4,
+        "uplinkOnly": 1
+      }
+    },
+    "system": {
+      "statsOutboundUplink": true,
+      "statsOutboundDownlink": true
+    }
+  },
   "log": {
     "access": "",
     "error": "",
@@ -240,43 +254,43 @@
       "https://cloudflare-dns.com/dns-query"
     ]
   },
-   "inbounds": [
+  "inbounds": [
     {
-      "domainOverride": [
-        "http",
-        "tls"
-      ],
-      "protocol": "socks",
-      "tag": "socks-in",
-      "listen": "127.0.0.1",
+      "tag": "socks",
       "port": 10808,
+      "listen": "127.0.0.1",
+      "protocol": "socks",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      },
       "settings": {
         "auth": "noauth",
         "udp": true,
-        "userLevel": 8
-      },
-      "sniffing": {
-        "enabled": true,
-        "destOverride": [
-          "http",
-          "tls"
-        ]
+        "userLevel": 8,
+        "allowTransparent": false
       }
     },
     {
-      "protocol": "http",
-      "tag": "http-in",
-      "listen": "127.0.0.1",
+      "tag": "http",
       "port": 10809,
-      "settings": {
-        "userLevel": 8
-      },
+      "listen": "127.0.0.1",
+      "protocol": "http",
       "sniffing": {
         "enabled": true,
         "destOverride": [
           "http",
           "tls"
         ]
+      },
+      "settings": {
+        "auth": "noauth",
+        "udp": true,
+        "userLevel": 8,
+        "allowTransparent": false
       }
     }
   ],
@@ -295,8 +309,8 @@
       "settings": {
         "fragment": {
           "packets": "tlshello",
-          "length": "100-200",
-          "interval": "10-20"
+          "length": "75-175",
+          "interval": "20-30"
         }
       },
       "streamSettings": {
@@ -358,47 +372,436 @@
         "concurrency": 8,
         "enabled": false
       }
-    }
-  ],
-  "policy": {
-    "levels": {
-      "8": {
-        "connIdle": 300,
-        "downlinkOnly": 1,
-        "handshake": 4,
-        "uplinkOnly": 1
+    },
+    {
+      "tag": "directd",
+      "protocol": "freedom"
+    },
+    {
+      "tag": "proxy",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "65.109.208.195",
+            "port": 29258,
+            "users": [
+              {
+                "id": "e045325b-4ff1-480d-87e8-f93a0b55a48d",
+                "alterId": 0,
+                "email": "t@t.tt",
+                "security": "auto",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "ea.com",
+          "fingerprint": "firefox",
+          "show": false,
+          "publicKey": "HxbPhG2FQOg_mXnDDKa83MlMSJ3sIRIEysJ3fl7G-Dc",
+          "shortId": "bbcf1a4e",
+          "spiderX": ""
+        },
+        "grpcSettings": {
+          "serviceName": "@V2ray_Alpha @V2ray_Alpha @V2ray_Alpha",
+          "multiMode": false,
+          "idle_timeout": 60,
+          "health_check_timeout": 20,
+          "permit_without_stream": false,
+          "initial_windows_size": 0
+        }
+      },
+      "mux": {
+        "enabled": false,
+        "concurrency": -1
       }
     },
-    "system": {
-      "statsOutboundUplink": true,
-      "statsOutboundDownlink": true
+    {
+      "tag": "proxytr",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "216.9.227.236",
+            "port": 8443,
+            "users": [
+              {
+                "id": "c3024a15-0cd5-461a-d99c-14c64efea3f8",
+                "alterId": 0,
+                "email": "t@t.tt",
+                "security": "auto",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "greenpepper.ir",
+          "fingerprint": "chrome",
+          "show": false,
+          "publicKey": "d_PryPoPxwX_0FUh7Eulm7Fzf73MeoTHRHvxK-pWaBI",
+          "shortId": "9825",
+          "spiderX": ""
+        },
+        "grpcSettings": {
+          "serviceName": "TelegramID:@iranbaxvpn",
+          "multiMode": false,
+          "idle_timeout": 60,
+          "health_check_timeout": 20,
+          "permit_without_stream": false,
+          "initial_windows_size": 0
+        }
+      },
+      "mux": {
+        "enabled": false,
+        "concurrency": -1
+      }
+    },
+    {
+      "tag": "block",
+      "protocol": "blackhole",
+      "settings": {
+        "response": {
+          "type": "http"
+        }
+      }
     }
-  },
+  ],
   "routing": {
     "domainStrategy": "IPIfNonMatch",
     "rules": [
       {
-        "inboundTag": [
-          "socks-in",
-          "http-in"
-        ],
         "type": "field",
         "port": "8443",
         "outboundTag": "dns-out",
         "enabled": true
       },
       {
-        "inboundTag": [
-          "socks-in",
-          "http-in"
-        ],
         "type": "field",
-        "port": "0-65535",
         "outboundTag": "fragment-out",
+        "domain": [
+          "dns.google",
+          "one.one.one.one",
+          "doh.umbrella.com",
+          "cloudflare-dns.com",
+          "googlevideo.",
+          "ytimg.",
+          "instagram.",
+          "facebook.",
+          "messenger.",
+          "fbcdn.",
+          "meta.",
+          "whatsapp.",
+          "wa.me",
+          "x.com",
+          "api.twitter.com",
+          "help.twitter.com",
+          "platform.twitter.com",
+          "abs.twimg.com",
+          "abs-0.twimg.com",
+          "pbs.twimg.com",
+          "video.twimg.com",
+          "syndication.twitter.com",
+          "cdn.cms-twdigitalassets.com"
+        ],
+        "enabled": true
+      },
+      {
+        "type": "field",
+        "outboundTag": "proxytr",
+        "domain": [
+          "cloudfront.",
+          "geosite:google",
+          "yt4.ggpht.com",
+          "indeed.",
+          "upwork",
+          "freelancer.com",
+          "fiverr",
+          "stripe.",
+          "stripecdn.",
+          "ctfassets.",
+          "link.com",
+          "thevisa.ca",
+          "pearsonpte",
+          "pearsonvue",
+          "pearson.",
+          "onetrust.com",
+          "perfdrive.com",
+          "bkm.com.tr",
+          "topchange",
+          "toppayment",
+          "alpari",
+          "geetest",
+          "mql5.",
+          "winmillionslotto.",
+          "weglot.",
+          "api-gaming-engine.",
+          "curacao-egaming.",
+          "amazon.com",
+          "amazon.net",
+          "a2z.com",
+          "a2z.net",
+          "amazonaws.com",
+          "aws.dev",
+          "awsstatic.com",
+          "omtrdc.net",
+          "demdex.net",
+          "examplesite1234.com"
+        ],
+        "enabled": true
+      },
+      {
+        "type": "field",
+        "outboundTag": "proxytr",
+        "ip": [
+          "0.0.0.1"
+        ],
+        "enabled": true
+      },
+      {
+        "type": "field",
+        "outboundTag": "proxy",
+        "domain": [
+          "whatismyipaddress.com",
+          "check-host.net",
+          "c.whatsapp.net",
+          "c1.whatsapp.net",
+          "c2.whatsapp.net",
+          "c3.whatsapp.net",
+          "e1.whatsapp.net",
+          "e2.whatsapp.net",
+          "e3.whatsapp.net",
+          "e4.whatsapp.net",
+          "e5.whatsapp.net",
+          "e6.whatsapp.net",
+          "e7.whatsapp.net",
+          "e8.whatsapp.net",
+          "e9.whatsapp.net",
+          "e10.whatsapp.net",
+          "e11.whatsapp.net",
+          "e12.whatsapp.net",
+          "e13.whatsapp.net",
+          "e14.whatsapp.net",
+          "e15.whatsapp.net",
+          "e16.whatsapp.net",
+          "a66e5b8d30b652954.awsglobalaccelerator.com",
+          "ac9293e5fb5d2d1d2.awsglobalaccelerator.com",
+          "ac9293e5fb5d2d1d2.awsglobalaccelerator.com",
+          "a66e5b8d30b652954.awsglobalaccelerator.com",
+          "twitter.com",
+          "digimovie",
+          "voanews.",
+          "tvmanoto.",
+          "manototv.",
+          "iranintl.",
+          "kanaljadid.",
+          "persiantvlive.",
+          "diplytv.",
+          "parsatv.",
+          "livetvstream.",
+          "videojs.",
+          "tutorialspoint.",
+          "i.pinimg.",
+          "tiny.cc",
+          "bit.ly",
+          "bitly.com",
+          "shorturl",
+          "ouo.io",
+          "ipinfo.io",
+          "telemetr.io",
+          "pexels.",
+          "pixabay.",
+          "formik.",
+          "reactrouter.",
+          "t.me",
+          "telegram.",
+          "telegram-cdn.",
+          "telegra.ph",
+          "tdesktop.",
+          "poe.com",
+          "poecdn.",
+          "poe-cdn.",
+          "quora.",
+          "quoracdn.",
+          "zebracat.",
+          "reddit.",
+          "redditmedia.",
+          "redditstatic.",
+          "redd.it",
+          "wordpress.",
+          "wp.",
+          "pinterest.",
+          "cheatography.",
+          "cloudfunctions.",
+          "cloudways.",
+          "codeanddeploy.",
+          "vegibit.",
+          "themeforest.",
+          "envato-static.",
+          "envatousercontent.",
+          "wearedevelopers.",
+          "website-files.com",
+          "stackexchange.",
+          "stackpps.",
+          "mathoverflow.",
+          "serverfault.",
+          "imgur.",
+          "whatwg.",
+          "samsungdevelopers.",
+          "experts-exchange.com",
+          "medium.com",
+          "systeminterview.com",
+          "hubspot.com",
+          "djangoproject.com",
+          "mercusys.",
+          "helpdeskgeek.",
+          "superuser.",
+          "behance.",
+          "demdex.",
+          "adobe.",
+          "adobelogin.",
+          "get.it",
+          "codewars.com",
+          "pl-coding.com",
+          "f.vimeocdn.com",
+          "i.vimeocdn.com",
+          "typeform.com",
+          "eepurl.com",
+          "mcusercontent.com",
+          "mailchimp.com",
+          "list-manage.com",
+          "list-manage1.com",
+          "requirejs.org",
+          "livehdcams.com",
+          "marketchameleon.com",
+          "pollyfill.io",
+          "olark.com",
+          "barchart.com",
+          "tipranks.com",
+          "seekingalpha.com",
+          "sail-horizon.com",
+          "tinypass.com",
+          "azureedge.net",
+          "dartpad",
+          "torproject",
+          "diagram.net",
+          "diagram.es",
+          "akamaized.net",
+          "tiny.cloud",
+          "unsplash.com",
+          "stackshare.io",
+          "instafree.com",
+          "lever.co",
+          "radiofarda.",
+          "bbcpersian.",
+          "bbc.com",
+          "bbc.co.uk",
+          "bbci.",
+          ".gscontxt.net",
+          ".webcontentassessor.com",
+          "chartbeat.",
+          "privacy-mgmt.",
+          "bbc-reporting-api.",
+          "rferl.org",
+          "demdex.",
+          "tiqcdn.",
+          "geeksforgeeks.",
+          "limecube.",
+          "singular.",
+          "examplesite12345.com"
+        ],
+        "enabled": true
+      },
+      {
+        "type": "field",
+        "outboundTag": "proxy",
+        "ip": [
+          "91.108.4.0/24",
+          "91.108.8.0/24",
+          "91.108.128.0/24",
+          "91.108.20.0/24",
+          "91.108.36.0/24",
+          "91.108.38.0/24",
+          "91.108.56.0/24",
+          "109.239.140.0/24",
+          "149.154.160.0/24",
+          "149.154.164.0/24",
+          "149.154.167.0/24",
+          "149.154.172.0/24",
+          "149.154.175.0/24",
+          "3.33.221.48",
+          "3.33.252.61",
+          "15.197.206.217",
+          "15.197.210.208",
+          "31.13.65.50",
+          "31.13.66.51",
+          "157.240.202.60",
+          "163.70.128.35",
+          "185.60.219.60"
+        ],
+        "enabled": true
+      },
+      {
+        "type": "field",
+        "outboundTag": "directd",
+        "domain": [
+          ".ir",
+          "ext:iran.dat:ir",
+          "ext:iran.dat:other",
+          ".githubusercontent.com",
+          "meet.google.com",
+          "meet.turns.goog",
+          "mtalk.google.com",
+          "zabanshenas.com",
+          "zabanshenas.app",
+          "drive.usercontent.google.com"
+        ],
+        "enabled": true
+      },
+      {
+        "type": "field",
+        "outboundTag": "directd",
+        "ip": [
+          "geoip:ir",
+          "216.58.205.46",
+          "216.239.35.0/24"
+        ],
+        "enabled": true
+      },
+      {
+        "type": "field",
+        "outboundTag": "directd",
+        "port": "5222",
+        "enabled": true
+      },
+      {
+        "type": "field",
+        "outboundTag": "block",
+        "domain": [
+          "geosite:category-ads",
+          "ext:iran.dat:ads"
+        ],
+        "enabled": true
+      },
+      {
+        "type": "field",
+        "outboundTag": "block",
+        "ip": [
+          "10.10.34.34",
+          "10.10.34.35"
+        ],
         "enabled": true
       }
-    ],
-    "strategy": "rules"
-  },
-  "stats": {}
+    ]
+  }
 }
