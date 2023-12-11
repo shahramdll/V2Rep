@@ -239,6 +239,12 @@
     "rules": [
       {
         "type": "field",
+        "outboundTag": "fragment-out",
+        "port": "53",
+        "enabled": true
+      },
+      {
+        "type": "field",
         "port": "8443",
         "outboundTag": "dns-out",
         "enabled": true
@@ -271,12 +277,6 @@
           "phncdn.com",
           "nsimg.net"
         ],
-        "enabled": true
-      },
-      {
-        "type": "field",
-        "outboundTag": "fragment-out",
-        "port": "53",
         "enabled": true
       },
       {
