@@ -239,8 +239,8 @@
     "rules": [
       {
         "inboundTag": [
-          "socks-in",
-          "http-in"
+          "socks",
+          "http"
         ],
         "type": "field",
         "port": "8443",
@@ -249,8 +249,8 @@
       },
       {
         "inboundTag": [
-          "socks-in",
-          "http-in"
+          "socks",
+          "http"
         ],
         "type": "field",
         "port": "0-65535",
