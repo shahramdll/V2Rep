@@ -180,51 +180,6 @@
       }
     },
     {
-      "tag": "proxy",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "216.9.227.236",
-            "port": 8443,
-            "users": [
-              {
-                "id": "c3024a15-0cd5-461a-d99c-14c64efea3f8",
-                "alterId": 0,
-                "email": "t@t.tt",
-                "security": "auto",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "greenpepper.ir",
-          "fingerprint": "chrome",
-          "show": false,
-          "publicKey": "d_PryPoPxwX_0FUh7Eulm7Fzf73MeoTHRHvxK-pWaBI",
-          "shortId": "9825",
-          "spiderX": ""
-        },
-        "grpcSettings": {
-          "serviceName": "TelegramID:@iranbaxvpn",
-          "multiMode": false,
-          "idle_timeout": 60,
-          "health_check_timeout": 20,
-          "permit_without_stream": false,
-          "initial_windows_size": 0
-        }
-      },
-      "mux": {
-        "enabled": false,
-        "concurrency": -1
-      }
-    },
-    {
       "tag": "block",
       "protocol": "blackhole",
       "settings": {
