@@ -234,12 +234,29 @@
     "rules": [
       {
         "type": "field",
-        "outboundTag": "fragment-out",
-        "port": "53",
-        "enabled": true
-      },
-      {
-        "type": "field",
+        "domain": [
+          "dns.google",
+          "one.one.one.one",
+          "doh.umbrella.com",
+          "cloudflare-dns.com",
+          "youtube.",
+          "googlevideo.",
+          "ytimg.",
+          "instagram.",
+          "facebook.",
+          "messenger.",
+          "fbcdn.",
+          "meta.",
+          "whatsapp.",
+          "x.com",
+          "twitter.com",
+          "twimg.com",
+          "cdn.cms-twdigitalassets.com",
+          "pornhub",
+          "phprcdn.com",
+          "phncdn.com",
+          "nsimg.net"
+        ],
         "port": "8443",
         "outboundTag": "dns-out",
         "enabled": true
@@ -274,12 +291,6 @@
       },
       {
         "type": "field",
-        "port": "0-65535",
-        "outboundTag": "proxy",
-        "enabled": true
-      },
-      {
-        "type": "field",
         "outboundTag": "block",
         "domain": [
           "geosite:category-ads"
@@ -293,6 +304,12 @@
           "10.10.34.34",
           "10.10.34.35"
         ],
+        "enabled": true
+      },
+      {
+        "type": "field",
+        "port": "0-65535",
+        "outboundTag": "proxy",
         "enabled": true
       }
     ]
