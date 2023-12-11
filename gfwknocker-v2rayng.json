@@ -64,7 +64,7 @@
     {
       "tag": "socks",
       "port": 10808,
-      "listen": "0.0.0.0",
+      "listen": "127.0.0.1",
       "protocol": "socks",
       "sniffing": {
         "enabled": true,
@@ -83,7 +83,7 @@
     {
       "tag": "http",
       "port": 10809,
-      "listen": "0.0.0.0",
+      "listen": "127.0.0.1",
       "protocol": "http",
       "sniffing": {
         "enabled": true,
@@ -239,7 +239,7 @@
     "rules": [
       {
         "type": "field",
-        "port": "8443",
+        "port": "53,8443",
         "outboundTag": "dns-out",
         "enabled": true
       },
