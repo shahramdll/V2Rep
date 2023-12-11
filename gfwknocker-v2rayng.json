@@ -239,56 +239,23 @@
     "domainStrategy": "IPIfNonMatch",
     "rules": [
       {
-        "type": "field",
-        "domain": [
-          "dns.google",
-          "one.one.one.one",
-          "doh.umbrella.com",
-          "cloudflare-dns.com",
-          "geosite:google",
-          "instagram.",
-          "cdninstagram.",
-          "facebook.",
-          "messenger.",
-          "fbcdn.",
-          "meta.",
-          "x.com",
-          "twitter.com",
-          "twimg.com",
-          "cdn.cms-twdigitalassets.com",
-          "pornhub",
-          "phprcdn.com",
-          "phncdn.com",
-          "nsimg.net"
+        "inboundTag": [
+          "socks-in",
+          "http-in"
         ],
+        "type": "field",
         "port": "8443",
         "outboundTag": "dns-out",
         "enabled": true
       },
       {
-        "type": "field",
-        "outboundTag": "fragment-out",
-        "domain": [
-          "dns.google",
-          "one.one.one.one",
-          "doh.umbrella.com",
-          "cloudflare-dns.com",
-          "geosite:google",
-          "instagram.",
-          "cdninstagram.",
-          "facebook.",
-          "messenger.",
-          "fbcdn.",
-          "meta.",
-          "x.com",
-          "twitter.com",
-          "twimg.com",
-          "cdn.cms-twdigitalassets.com",
-          "pornhub",
-          "phprcdn.com",
-          "phncdn.com",
-          "nsimg.net"
+        "inboundTag": [
+          "socks-in",
+          "http-in"
         ],
+        "type": "field",
+        "port": "0-65535",
+        "outboundTag": "fragment-out",
         "enabled": true
       },
       {
@@ -306,12 +273,6 @@
           "10.10.34.34",
           "10.10.34.35"
         ],
-        "enabled": true
-      },
-      {
-        "type": "field",
-        "port": "0-65535",
-        "outboundTag": "proxy",
         "enabled": true
       }
     ]
