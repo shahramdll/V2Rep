@@ -22,198 +22,48 @@
   "dns": {
     "tag": "dns",
     "hosts": {
-      "cloudflare-dns.com": [
-        "203.32.120.226",
-        "104.16.248.249",
-        "104.16.249.249"
-      ],
-      "doh.umbrella.com": [
-        "146.112.41.5"
-      ],
-      "domain:youtube.com": [
-        "google.com"
-      ],
-      "domain:instagram.com": [
-        "163.70.128.174"
-      ],
-      "domain:i.instagram.com": [
-        "163.70.128.174"
-      ],
-      "domain:static.cdninstagram.com": [
-        "163.70.132.63"
-      ],
-      "domain:cdninstagram.com": [
-        "163.70.128.174"
-      ],
-      "domain:facebook.com": [
-        "163.70.128.35"
-      ],
-      "domain:graph.facebook.com": [
-        "163.70.128.35"
-      ],
-      "domain:messenger.com": [
-        "163.70.128.35"
-      ],
-      "domain:static.xx.fbcdn.net": [
-        "163.70.128.35"
-      ],
-      "domain:scontent.xx.fbcdn.net": [
-        "163.70.128.23"
-      ],
-      "domain:video-mct1-1.xx.fbcdn.net": [
-        "163.70.128.23"
-      ],
-      "domain:scontent-mct1-1.xx.fbcdn.net": [
-        "163.70.128.23"
-      ],
-      "domain:developers.facebook.com": [
-        "31.13.84.8"
-      ],
-      "domain:connect.facebook.net": [
-        "31.13.84.51"
-      ],
-      "domain:meta.com": [
-        "163.70.128.13"
-      ],
-      "domain:whatsapp.com": [
-        "163.70.128.60"
-      ],
-      "domain:web.whatsapp.com": [
-        "163.70.128.60"
-      ],
-      "domain:api.whatsapp.com": [
-        "163.70.128.60"
-      ],
-      "domain:alpha.whatsapp.com": [
-        "163.70.128.60"
-      ],
-      "domain:beta.whatsapp.com": [
-        "163.70.128.60"
-      ],
-      "domain:account.whatsapp.com": [
-        "163.70.128.60"
-      ],
-      "domain:autodiscover.whatsapp.com": [
-        "163.70.128.60"
-      ],
-      "domain:whatsapp.net": [
-        "163.70.128.60"
-      ],
-      "domain:cdn.whatsapp.net": [
-        "163.70.128.60"
-      ],
-      "domain:chat.cdn.whatsapp.net": [
-        "163.70.128.60"
-      ],
-      "domain:snr.whatsapp.net": [
-        "163.70.128.60"
-      ],
-      "domain:dit.whatsapp.net": [
-        "163.70.128.60"
-      ],
-      "domain:pps.whatsapp.net": [
-        "163.70.128.60"
-      ],
-      "domain:c.whatsapp.net": [
-        "15.197.206.217"
-      ],
-      "domain:g-fallback.whatsapp.net": [
-        "163.70.128.61"
-      ],
-      "domain:g.whatsapp.net": [
-        "163.70.128.61"
-      ],
-      "domain:graph.whatsapp.net": [
-        "163.70.128.61"
-      ],
-      "domain:e1.whatsapp.net": [
-        "163.70.128.60"
-      ],
-      "domain:e2.whatsapp.net": [
-        "163.70.128.60"
-      ],
-      "domain:e3.whatsapp.net": [
-        "163.70.128.60"
-      ],
-      "domain:e4.whatsapp.net": [
-        "163.70.128.60"
-      ],
-      "domain:e5.whatsapp.net": [
-        "163.70.128.60"
-      ],
-      "domain:e6.whatsapp.net": [
-        "163.70.128.60"
-      ],
-      "domain:e7.whatsapp.net": [
-        "163.70.128.60"
-      ],
-      "domain:e8.whatsapp.net": [
-        "163.70.128.60"
-      ],
-      "domain:e9.whatsapp.net": [
-        "163.70.128.60"
-      ],
-      "domain:e10.whatsapp.net": [
-        "163.70.128.60"
-      ],
-      "domain:e11.whatsapp.net": [
-        "163.70.128.60"
-      ],
-      "domain:e12.whatsapp.net": [
-        "163.70.128.60"
-      ],
-      "domain:e13.whatsapp.net": [
-        "163.70.128.60"
-      ],
-      "domain:e14.whatsapp.net": [
-        "163.70.128.60"
-      ],
-      "domain:e15.whatsapp.net": [
-        "163.70.128.60"
-      ],
-      "domain:e16.whatsapp.net": [
-        "163.70.128.60"
-      ],
-      "domain:wa.me": [
-        "163.70.128.60"
-      ],
-      "domain:twitter.com": [
-        "104.244.42.1"
-      ],
-      "domain:x.com": [
-        "188.114.98.229"
-      ],
-      "domain:api.twitter.com": [
-        "104.244.42.66"
-      ],
-      "domain:api2.twitter.com": [
-        "199.59.149.200"
-      ],
-      "domain:graphql.twitter.com": [
-        "104.244.42.67"
-      ],
-      "domain:help.twitter.com": [
-        "104.244.42.72"
-      ],
-      "domain:platform.twitter.com": [
-        "93.184.220.66"
-      ],
-      "domain:abs.twimg.com": [
-        "151.101.244.159",
-        "152.199.24.185"
-      ],
-      "domain:abs-0.twimg.com": [
-        "104.244.43.131"
-      ],
-      "domain:pbs.twimg.com": [
-        "93.184.220.70"
-      ],
-      "domain:video.twimg.com": [
-        "192.229.220.133"
-      ]
+      "cloudflare-dns.com":"104.16.248.249",
+      "domain:youtube.com": "google.com",
+      "domain:doh.umbrella.com": "146.112.41.5",
+      "domain:meta.com": "163.70.128.13",
+      "domain:facebook.com": "163.70.128.35",
+      "domain:graph.facebook.com": "163.70.128.35",
+      "domain:messenger.com": "163.70.128.35",
+      "domain:static.xx.fbcdn.net": "163.70.128.35",
+      "domain:developers.facebook.com": "31.13.84.8",
+      "domain:connect.facebook.net": "31.13.84.51",
+      "domain:edge-mqtt.facebook.com": "163.70.128.4",
+      "domain:edge-star-mini-shv-03-cdg4.facebook.com": "163.70.128.35",
+      "domain:edge-dgw-shv-03-cdg4.facebook.com": "163.70.128.63",
+      "domain:wa.me": "163.70.128.60",
+      "domain:whatsapp.fbsbx.com": "163.70.128.60",
+      "web-chat-e2ee.facebook.com":"163.70.128.128",
+      "regexp:(http:\/\/|https:\/\/)*[A-Za-z0-9-.]*xx.fbcdn+.net$": "163.70.128.23",
+      "regexp:(http:\/\/|https:\/\/)*(instagram-)+[A-Za-z0-9-.]+(.fbcdn|.facebook)(.net|.com)$": "163.70.128.60",
+      "regexp:(http:\/\/|https:\/\/)*(instagram-)+[A-Za-z0-9-.]*fbcdn(.net|.com)$": "163.70.128.60",
+      "regexp:(http:\/\/|https:\/\/)*[A-Za-z0-9-.]*instagram+(.net|.com)$": "163.70.128.63",
+      "a66e5b8d30b652954.awsglobalaccelerator.com":"3.33.221.48",
+      "ac9293e5fb5d2d1d2.awsglobalaccelerator.com":"3.33.252.61",
+      "ac9293e5fb5d2d1d2.awsglobalaccelerator.com":"15.197.206.217",
+      "a66e5b8d30b652954.awsglobalaccelerator.com":"15.197.210.208",
+      "regexp:(http:\/\/|https:\/\/)*[ce]+[0-9.]+whatsapp+.net$":"3.33.221.48",
+      "regexp:(http:\/\/|https:\/\/)*(fna-whatsapp-|whatsapp-)+[A-Za-z0-9-.]+(.fbcdn|.facebook)(.net|.com)$": "163.70.129.60",
+      "regexp:(http:\/\/|https:\/\/)*[A-Za-z0-9-.]*whatsapp+(.net|.com)$": "163.70.129.60",
+      "domain:twitter.com": "104.244.42.1",
+      "domain:x.com": "188.114.98.229",
+      "domain:api.twitter.com": "104.244.42.66",
+      "domain:api2.twitter.com": "199.59.149.200",
+      "domain:graphql.twitter.com": "104.244.42.67",
+      "domain:help.twitter.com": "104.244.42.72",
+      "domain:platform.twitter.com": "93.184.220.66",
+      "domain:abs.twimg.com": "151.101.244.159",
+      "domain:abs-0.twimg.com": "104.244.43.131",
+      "domain:pbs.twimg.com": "93.184.220.70",
+      "domain:video.twimg.com": "192.229.220.133"
     },
     "servers": [
-      "https://doh.umbrella.com/dns-query"
+      "https://doh.umbrella.com/dns-query",
+      "https://cloudflare-dns.com/dns-query"
     ]
   },
   "inbounds": [
@@ -287,8 +137,8 @@
       "settings": {
         "fragment": {
           "packets": "tlshello",
-          "length": "70-75",
-          "interval": "5-10"
+          "length": "75-80",
+          "interval": "3-6"
         }
       },
       "streamSettings": {
@@ -357,11 +207,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "95.216.218.103",
-            "port": 17849,
+            "address": "65.109.208.195",
+            "port": 29258,
             "users": [
               {
-                "id": "d63ae83c-1b1f-4319-93de-e0ba29ceae2b",
+                "id": "e045325b-4ff1-480d-87e8-f93a0b55a48d",
                 "alterId": 0,
                 "email": "t@t.tt",
                 "security": "auto",
@@ -372,33 +222,23 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "http",
-            "request": {
-              "version": "1.1",
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "headers": {
-                "Host": [
-                  "zula.ir"
-                ],
-                "User-Agent": [
-                  ""
-                ],
-                "Accept-Encoding": [
-                  "gzip, deflate"
-                ],
-                "Connection": [
-                  "keep-alive"
-                ],
-                "Pragma": "no-cache"
-              }
-            }
-          }
+        "network": "grpc",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "ea.com",
+          "fingerprint": "firefox",
+          "show": false,
+          "publicKey": "HxbPhG2FQOg_mXnDDKa83MlMSJ3sIRIEysJ3fl7G-Dc",
+          "shortId": "bbcf1a4e",
+          "spiderX": ""
+        },
+        "grpcSettings": {
+          "serviceName": "@V2ray_Alpha @V2ray_Alpha @V2ray_Alpha",
+          "multiMode": false,
+          "idle_timeout": 60,
+          "health_check_timeout": 20,
+          "permit_without_stream": false,
+          "initial_windows_size": 0
         }
       },
       "mux": {
@@ -476,71 +316,22 @@
         "type": "field",
         "port": "8443",
         "outboundTag": "dns-out",
-        "domain": [
-          "googlevideo.",
-          "ytimg.",
-          "instagram.",
-          "facebook.",
-          "messenger.",
-          "fbcdn.",
-          "meta.",
-          "whatsapp.",
-          "wa.me",
-          "x.com",
-          "api.twitter.com",
-          "help.twitter.com",
-          "platform.twitter.com",
-          "abs.twimg.com",
-          "abs-0.twimg.com",
-          "pbs.twimg.com",
-          "video.twimg.com",
-          "syndication.twitter.com",
-          "cdn.cms-twdigitalassets.com",
-          "doh.umbrella.com"
-        ],
-        "enabled": true
-      },
-      {
-        "type": "field",
-        "port": "0-65535",
-        "outboundTag": "fragment-out",
-        "domain": [
-          "googlevideo.",
-          "ytimg.",
-          "instagram.",
-          "facebook.",
-          "messenger.",
-          "fbcdn.",
-          "meta.",
-          "whatsapp.",
-          "wa.me",
-          "x.com",
-          "api.twitter.com",
-          "help.twitter.com",
-          "platform.twitter.com",
-          "abs.twimg.com",
-          "abs-0.twimg.com",
-          "pbs.twimg.com",
-          "video.twimg.com",
-          "syndication.twitter.com",
-          "cdn.cms-twdigitalassets.com",
-          "doh.umbrella.com"
-        ],
         "enabled": true
       },
       {
         "type": "field",
         "outboundTag": "directadd",
         "domain": [
+          ".ir",
           ".githubusercontent.com",
+          "ext:iran.dat:ir",
+          "ext:iran.dat:other",
           "meet.google.com",
           "meet.turns.goog",
           "mtalk.google.com",
-          "ext:iran.dat:ir",
-          "ext:iran.dat:other",
           "zabanshenas.com",
           "zabanshenas.app",
-          ".ir",
+          "drive.usercontent.google.com",
           "translate.googleapis.",
           "translate.google.",
           "fonts.googleapis.",
@@ -553,7 +344,22 @@
         "type": "field",
         "outboundTag": "directadd",
         "ip": [
-          "216.58.205.46"
+          "216.58.205.46",
+          "216.239.35.0/24"
+        ],
+        "enabled": true
+      },
+            {
+        "type": "field",
+        "port": "0-65535",
+        "outboundTag": "fragment-out",
+        "domain": [
+          "dns.google",
+          "one.one.one.one",
+          "doh.umbrella.com",
+          "cloudflare-dns.com",
+          "googlevideo.",
+          "ytimg."
         ],
         "enabled": true
       },
@@ -563,6 +369,7 @@
         "domain": [
           "cloudfront.",
           "geosite:google",
+          "geosite:netflix",
           "yt4.ggpht.com",
           "indeed.",
           "upwork",
@@ -581,6 +388,7 @@
           "bkm.com.tr",
           "topchange",
           "toppayment",
+          "toppyment",
           "alpari",
           "geetest",
           "mql5.",
@@ -617,6 +425,9 @@
           "check-host.net",
           "twitter.com",
           "digimovie",
+          "avamovie",
+          "toplist.cz",
+          "opensubtitles.",
           "voanews.",
           "tvmanoto.",
           "manototv.",
@@ -698,8 +509,6 @@
           "mailchimp.com",
           "list-manage.com",
           "list-manage1.com",
-          "requirejs.org",
-          "livehdcams.com",
           "marketchameleon.com",
           "pollyfill.io",
           "olark.com",
@@ -743,13 +552,83 @@
         "type": "field",
         "outboundTag": "proxy",
         "ip": [
-          "149.154.167.41",
-          "149.154.167.91",
-          "149.154.167.92",
-          "149.154.175.50",
-          "149.154.175.53",
-          "91.108.56.165",
-          "149.154.175.54"
+          "91.108.4.0/24",
+          "91.108.8.0/24",
+          "91.108.128.0/24",
+          "91.108.20.0/24",
+          "91.108.36.0/24",
+          "91.108.38.0/24",
+          "91.108.56.0/24",
+          "109.239.140.0/24",
+          "149.154.160.0/24",
+          "149.154.164.0/24",
+          "149.154.167.0/24",
+          "149.154.172.0/24",
+          "149.154.175.0/24",
+          "15.197.206.217",
+          "15.197.210.208",
+          "157.240.0.60",
+          "157.240.196.60",
+          "157.240.201.60",
+          "157.240.202.60",
+          "157.240.203.60",
+          "157.240.205.60",
+          "157.240.208.60",
+          "157.240.212.60",
+          "157.240.221.60",
+          "157.240.222.60",
+          "157.240.238.60",
+          "157.240.247.60",
+          "157.240.251.60",
+          "157.240.252.60",
+          "157.240.253.60",
+          "157.240.30.54",
+          "157.240.31.60",
+          "157.240.5.60",
+          "157.240.8.53",
+          "157.240.9.53",
+          "163.70.128.35",
+          "185.60.218.53",
+          "185.60.219.60",
+          "3.33.221.48",
+          "3.33.252.61",
+          "31.13.65.49",
+          "31.13.65.50",
+          "31.13.66.51",
+          "31.13.69.60",
+          "31.13.70.49",
+          "31.13.75.60",
+          "31.13.80.53",
+          "31.13.81.53",
+          "31.13.84.51",
+          "31.13.86.51"
+        ],
+        "enabled": true
+      },
+      {
+        "type": "field",
+        "port": "0-65535",
+        "outboundTag": "fragment-out",
+        "domain": [
+          "instagram.",
+          "facebook.",
+          "messenger.",
+          "fbcdn.",
+          "meta.",
+          "whatsapp.",
+          "(http:\/\/|https:\/\/)*[ce]+[0-9.]+whatsapp+.net$",
+          "a66e5b8d30b652954.awsglobalaccelerator.com",
+          "ac9293e5fb5d2d1d2.awsglobalaccelerator.com",
+          "ac9293e5fb5d2d1d2.awsglobalaccelerator.com",
+          "a66e5b8d30b652954.awsglobalaccelerator.com",
+          "x.com",
+          "twitter.com",
+          "twimg.com",
+          "cdn.cms-twdigitalassets.com",
+          "pornhub",
+          "phprcdn.com",
+          "phncdn.com",
+          "nsimg.net"
         ],
         "enabled": true
       },
@@ -757,7 +636,20 @@
         "type": "field",
         "outboundTag": "block",
         "domain": [
+          "trafficjunky.",
+          "etahub.",
+          "hubt.pornhub",
+          "ext:iran.dat:ads",
           "geosite:category-ads"
+        ],
+        "enabled": true
+      },
+      {
+        "type": "field",
+        "outboundTag": "block",
+        "ip": [
+          "10.10.34.34",
+          "10.10.34.35"
         ],
         "enabled": true
       }
